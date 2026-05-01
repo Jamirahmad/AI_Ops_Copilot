@@ -1,0 +1,26 @@
+﻿# Local secrets
+.env
+
+# Python cache/build
+__pycache__/
+*.pyc
+
+# Runtime state and logs
+data/agent_runs.jsonl
+data/errors.jsonl
+data/feedback.jsonl
+data/memory_store.json
+data/logs.txt
+data/runbooks.txt
+
+# Rebuildable KB artifacts
+data/knowledge_base/
+
+# Local knowledge docs (keep placeholders only)
+data/knowledge/*.pdf
+!data/knowledge/.gitkeep
+!data/knowledge/README.md
+
+# Demo-generated outputs
+demo/forced_interactions.jsonl
+demo/screenshots/

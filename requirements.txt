@@ -1,7 +1,12 @@
-langchain
+﻿langchain
+langchain-openai
+langchain-community
 openai
 faiss-cpu
 tiktoken
 python-dotenv
 fastapi
 uvicorn
+reportlab
+pypdf
+
