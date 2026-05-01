@@ -1,0 +1,62 @@
+﻿<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AI Ops Copilot</title>
+    <link rel="stylesheet" href="/static/styles.css" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <aside class="sidebar">
+        <div class="brand">
+          <div class="brand-dot"></div>
+          <div>
+            <h1>AI Ops Copilot</h1>
+            <p>Incident assistant</p>
+          </div>
+        </div>
+
+        <button id="newSessionBtn" class="btn primary full">New Session</button>
+        <div id="sessionsList" class="sessions"></div>
+      </aside>
+
+      <main class="main">
+        <header class="topbar">
+          <nav class="tabs">
+            <button id="chatTabBtn" class="tab active">Chat</button>
+            <button id="evalTabBtn" class="tab">Evaluation</button>
+          </nav>
+          <div class="topbar-note">Press Ctrl+Enter to send</div>
+        </header>
+
+        <section id="errorBanner" class="banner hidden"></section>
+
+        <section id="chatTab" class="panel">
+          <div id="messages" class="messages"></div>
+          <div class="composer">
+            <textarea id="queryInput" placeholder="Ask about incidents, failures, deploy impact, latency..." rows="3"></textarea>
+            <div class="row">
+              <button id="sendBtn" class="btn primary">Send</button>
+              <button id="retryBtn" class="btn">Retry Last</button>
+              <span id="spinner" class="spinner hidden">Thinking...</span>
+            </div>
+          </div>
+        </section>
+
+        <section id="evalTab" class="panel hidden">
+          <div class="row">
+            <button id="runEvalBtn" class="btn primary">Run /evaluate</button>
+            <span id="evalSpinner" class="spinner hidden">Running evaluation...</span>
+          </div>
+          <div id="evalOutput" class="eval-output"></div>
+        </section>
+      </main>
+    <div id="toast" class="toast hidden" role="status" aria-live="polite"></div>
+    </div>
+
+    <script src="/static/app.js"></script>
+  </body>
+</html>
+
+
