@@ -80,24 +80,14 @@ Artifacts:
 - `data/knowledge_base/stats.json`
 - `data/knowledge_base/faiss_index/` (when embeddings run)
 
-## Large Synthetic Test Data
-
-Generator script:
-
-```powershell
-powershell.exe -ExecutionPolicy Bypass -File .\scripts\generate_test_data.ps1 -IncidentRows 1000000 -AlertRows 1000000 -MetricRows 1000000
-```
-
-This creates large-scale JSONL corpora for realistic retrieval/evaluation pressure testing.
-
 ## Deliverables
 
-- Problem Framing: `docs/problem_framing.md`
-- Demo Script: `demo/demo_script.md`
-- Evaluation Report: `docs/evaluation_report.md`
-- Engineering & Product Justification: `docs/engineering_product_justification.md`
-- Phase-Wise Improvements: `docs/phase_wise_improvements.md`
-- Grader Checklist: `docs/grader_phase_checklist.md`
-- Submission Index: `docs/submission_package.md`
+- [Problem Framing](docs/problem_framing.md)
+- [Demo Script](demo/demo_script.md)
+- [Evaluation Report](docs/evaluation_report.md)
+- [Engineering & Product Justification](docs/engineering_product_justification.md)
+- [Phase-Wise Improvements](docs/phase_wise_improvements.md)
+- [Grader Checklist](docs/grader_phase_checklist.md)
+- [Submission Index](docs/submission_package.md)
 
 
